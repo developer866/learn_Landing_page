@@ -8,20 +8,66 @@
 .container-section {
   width: 90%;
   margin: auto;
-
-  padding: 10px;
+  padding: 30px 10px;
   display: flex;
   gap: 20px;
   flex-direction: column;
   h1 {
     font-size: 30px;
-
     margin-bottom: 10px;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
+/* Container for buttons */
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Makes it responsive on small screens */
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #a0430a; /* brand color */
+  color: #dfe8e6;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid;
+}
+
+.btn-primary:hover {
+  background: #dfe8e6;
+  color: #7e3308; /* darker shade for hover */
+  transform: translateY(-2px);
+  border: none;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: #dfe8e6;
+  color: #a0430a;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: 2px solid #a0430a;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #a0430a;
+  border: 1px solid #dfe8e6;
+  color: #dfe8e6;
+  transform: translateY(-2px);
+}
+
 @media (min-width: 768px) {
   .container-section {
     width: 90%;
