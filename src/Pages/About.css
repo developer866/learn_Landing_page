@@ -1,0 +1,181 @@
+.about-page {
+  background: #a0430a;
+  color: #dfe8e6;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0px 20px;
+}
+
+/* HERO SECTION */
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.about-hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.about-hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-hero-img img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .about-hero {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .about-hero-text {
+    width: 50%;
+  }
+
+  .about-hero-img {
+    width: 45%;
+  }
+}
+
+/* MISSION SECTION */
+.about-mission {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-mission h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-mission p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* TEAM SECTION */
+.about-team {
+  text-align: center;
+}
+
+.about-team h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.team-card {
+  background: #dfe8e6;
+  color: #a0430a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* WHY CHOOSE US */
+.about-values {
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.value-card {
+  background: #dfe8e6;
+  color: #a0430a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.value-card h3 {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CALL TO ACTION */
+.about-cta {
+  text-align: center;
+  background: #dfe8e6;
+  color: #a0430a;
+  padding: 50px 20px;
+  border-radius: 15px;
+}
+
+.about-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  background: #a0430a;
+  color: #dfe8e6;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #7e3308;
+}

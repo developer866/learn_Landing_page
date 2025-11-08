@@ -1,0 +1,121 @@
+.footer {
+  min-height: 30vh;
+  background-color: transparent; /* same as origin */
+  color: #a0430a; /* brand color for text */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+    flex-direction: row;
+  }
+}
+
+.footer-section-heading {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer-section-heading {
+    width: 40%;
+  }
+}
+
+.footer-section-heading h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #a0430a;
+}
+
+.footer-section-heading p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.footer-section-socials {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer-section-socials {
+    width: 30%;
+  }
+}
+
+.footer-section-socials h2 {
+  color: #a0430a;
+  margin-bottom: 10px;
+}
+
+.footer-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-contact img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(80%) saturate(420%)
+    hue-rotate(10deg);
+}
+
+.footer-right {
+  text-align: center;
+  border-top: 1px solid #a0430a;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #a0430a;
+}
+
+/* Social Icons */
+.social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #a0430a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.social-box:hover {
+  background-color: #a0430a;
+}
+
+.social-box img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(80%) saturate(420%)
+    hue-rotate(10deg);
+}
+
+.social-box:hover img {
+  filter: brightness(0) invert(1);
+}

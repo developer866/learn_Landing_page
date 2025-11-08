@@ -13,7 +13,7 @@ function Navbar() {
     <main>
       <section>
         <div className="navbar">
-          <h1 className="logo">Ayeni</h1>
+          <h1 className="logo">A-STACK</h1>
 
           {/* navigation */}
           <section>
@@ -22,6 +22,9 @@ function Navbar() {
                 <p>HOME</p>
               </Link>
               <Link to="/About">
+                <p>ABOUT</p>
+              </Link>
+              <Link to="/Projects">
                 <p>ABOUT</p>
               </Link>
               <Link to="/Services">
@@ -55,16 +58,16 @@ function Navbar() {
                 </div>
                 <ul className="menu-links">
                   <Link to="/" onClick={handleClicks}>
-                    <h3>HOME</h3>
+                    <h4>HOME</h4>
                   </Link>
                   <Link to="/About" onClick={handleClicks}>
-                    <h3>ABOUT</h3>
+                    <h4>ABOUT</h4>
                   </Link>
                   <Link to="/Services" onClick={handleClicks}>
-                    <h3>SERVICES</h3>
+                    <h4>SERVICES</h4>
                   </Link>
                   <Link to="/Contact" onClick={handleClicks}>
-                    <h3>CONTACT US</h3>
+                    <h4>CONTACT US</h4>
                   </Link>
                 </ul>
               </div>

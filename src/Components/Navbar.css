@@ -14,6 +14,7 @@
   padding: 15px 30px;
   backdrop-filter: blur(60px);
   background: white;
+  color: #a0430a;
   /* border: 1px solid; */
 }
 
@@ -43,12 +44,12 @@
 
   .navbar-links a {
     text-decoration: none;
-    color: black;
+    color: #a0430a;
     transition: color 0.3s;
   }
 
   .navbar-links a:hover {
-    color: #0077ff;
+      color: #a0430a; 
   }
 }
 
@@ -77,6 +78,7 @@
   width: 45%;
   background: white;
   padding: 30px;
+  border-radius: 10px 0px 0px 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   animation: slideIn 0.5s ease;
 }
@@ -108,7 +110,7 @@
   flex-direction: column;
   gap: 25px;
   /* font-weight: 600; */
-  color: #555;
+  color: #a0430a;
 }
 
 .menu-links a {
@@ -120,5 +122,5 @@
 }
 
 .menu-links a:hover {
-  color: #0077ff;
+  color: #a0430a;  
 }
