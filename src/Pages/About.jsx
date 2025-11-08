@@ -14,9 +14,6 @@ function About() {
             connect, and grow.
           </p>
         </div>
-        <div className="about-hero-img">
-          <img src="./Images/agency_team.jpg" alt="Creative Team" />
-        </div>
       </section>
 
       {/* Mission Section */}

@@ -3,6 +3,9 @@ import "./layout.css";
 import Services from "./Services.jsx";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
+import { Link } from "react-router-dom";
+import BookService from "./BookService.jsx";
+import Project from "./Project.jsx";
 function Home() {
   return (
     <main>
@@ -16,8 +19,12 @@ function Home() {
               craft designs that don’t just look good, but work perfectly.
             </p>
             <div className="home-buttons">
-              <button className="btn-primary">Book Service</button>
-              <button className="btn-secondary">View Our Works</button>
+              <Link to="./BookService">
+                <button className="btn-primary">Book Service</button>
+              </Link>
+              <Link to="./Project">
+                <button className="btn-secondary">View Our Works</button>
+              </Link>
             </div>
           </section>
           <section className="centered">
@@ -31,7 +38,6 @@ function Home() {
       </section>
       <About />
       <Services />
-
     </main>
   );
 }

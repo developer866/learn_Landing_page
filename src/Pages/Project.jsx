@@ -1,7 +1,7 @@
 import React from "react";
 import "./project.css";
 
-function ViewWorks() {
+function Project() {
   const projects = [
     { title: "Brand Identity", image: "./Images/project1.jpg" },
     { title: "Corporate Website", image: "./Images/project2.jpg" },
@@ -28,4 +28,4 @@ function ViewWorks() {
   );
 }
 
-export default ViewWorks;
+export default Project;

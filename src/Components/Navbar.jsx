@@ -19,19 +19,17 @@ function Navbar() {
           <section>
             <ul className="navbar-links">
               <Link to="/">
-                <p>HOME</p>
+                <p>Home</p>
               </Link>
-              <Link to="/About">
-                <p>ABOUT</p>
-              </Link>
-              <Link to="/Projects">
-                <p>ABOUT</p>
+          
+              <Link to="/Project">
+                <p>Projects</p>
               </Link>
               <Link to="/Services">
-                <p>SERVICES</p>
+                <p>Services</p>
               </Link>
               <Link to="/Contact">
-                <p>CONTACT US</p>
+                <p>Contact Us</p>
               </Link>
             </ul>
           </section>
@@ -58,16 +56,16 @@ function Navbar() {
                 </div>
                 <ul className="menu-links">
                   <Link to="/" onClick={handleClicks}>
-                    <h4>HOME</h4>
+                    <h4>Home</h4>
                   </Link>
-                  <Link to="/About" onClick={handleClicks}>
-                    <h4>ABOUT</h4>
+                  <Link to="/Project" onClick={handleClicks}>
+                    <h4>Project</h4>
                   </Link>
                   <Link to="/Services" onClick={handleClicks}>
-                    <h4>SERVICES</h4>
+                    <h4>Services</h4>
                   </Link>
                   <Link to="/Contact" onClick={handleClicks}>
-                    <h4>CONTACT US</h4>
+                    <h4>Contact Us</h4>
                   </Link>
                 </ul>
               </div>
