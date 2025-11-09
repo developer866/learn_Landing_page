@@ -7,6 +7,7 @@
   padding: 0px 20px;
 }
 
+
 /* HERO SECTION */
 .about-hero {
   display: flex;
@@ -20,7 +21,7 @@
 .about-hero-text h1 {
   text-align: center;
   /* padding: 20px; */
-  /* background: #dfe8e6; */
+  background: #dfe8e6;
   color: #a0430a;
   font-size: 2.2rem;
   margin-bottom: 15px;

@@ -14,7 +14,7 @@ function Home() {
       padding: 2,
       color: "#10B981",
       strokeWidth: 3,
-      animationDuration: 1500, 
+      animationDuration: 1500,
       iterations: 1,
       multiline: true,
     }).show();
@@ -27,7 +27,7 @@ function Home() {
       strokeWidth: 5,
       padding: 10,
       animationDuration: 3000, // 3 seconds (slow)
-      iterations: 1, // run once
+      iterations: 2,
       multiline: true,
     }).show();
   }, []);
@@ -36,8 +36,10 @@ function Home() {
       <section className="container">
         <section className="container-section">
           <section className="centered">
-            <h1 ref={textRef}>
-              Transforming Ideas into Stunning Digital Experiences
+            <h1>
+              <span ref={textRef}>
+                Transforming Ideas into Stunning Digital Experiences
+              </span>
             </h1>
             <p>
               We are a creative website design agency helping brands stand out
@@ -63,7 +65,7 @@ function Home() {
         </section>
       </section>
       <section className="about-section">
-        <About highlight={textRef}/>
+        <About />
       </section>
       <Services />
     </main>

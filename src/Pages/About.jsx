@@ -1,19 +1,18 @@
-
 import "./About.css";
 import { forwardRef } from "react";
 
-const About = forwardRef((props,textRef) => {
-  
+const About = forwardRef((props, textRef) => {
   return (
     <main className="about-page">
       {/* Hero Section */}
+
       <section className="about-hero">
         <div className="about-hero-text">
           <h1 ref={textRef}>About Us</h1>
           <p>
-            We’re a creative agency driven by passion and purpose. Our team
-            designs meaningful digital experiences that help brands stand out,
-            connect, and grow.
+            We’re a <span ref={textRef}>creative agency</span> driven by passion
+            and purpose. Our team designs meaningful digital experiences that
+            help brands stand out, connect, and grow.
           </p>
         </div>
       </section>
