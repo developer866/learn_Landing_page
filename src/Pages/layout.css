@@ -23,11 +23,17 @@
 /* Container for buttons */
 .home-buttons {
   display: flex;
+  flex-direction: row;
   gap: 20px;
   justify-content: center;
   margin-top: 30px;
-  flex-wrap: wrap; /* Makes it responsive on small screens */
 }
+@mwdia (min-width: 768px) {
+  .home-buttons {
+    justify-content: flex-start;
+  }
+}
+
 
 /* Primary button */
 .btn-primary {
