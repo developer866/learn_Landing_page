@@ -1,7 +1,7 @@
 .book-page {
   background: #a0430a;
   color: #dfe8e6;
-  min-height: 90vh;
+  min-height: 70vh;
   padding: 40px 20px;
   text-align: center;
 }
@@ -19,14 +19,19 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 500px;
   margin: auto;
 }
 
+@media (min-width: 768px) {
+  .book-form {
+    max-width: 50%;
+  }
+}
 .book-form input,
 .book-form select,
 .book-form textarea {
-  padding: 12px 15px;
+ 
+  padding: 25px 15px;
   border-radius: 8px;
   border: none;
   font-size: 1rem;
@@ -34,7 +39,7 @@
 
 .book-form textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 150px;
 }
 
 .book-form button {

@@ -97,7 +97,7 @@ function Footer() {
       </section>
 
       <div className="footer-right">
-        <p>© 2019 - 2025 Divine Design Agency | All Rights Reserved</p>
+        <p>© 2019 - 2025  <b> <em>A-Stack Design Agency </em></b>| All Rights Reserved</p>
       </div>
     </footer>
   );

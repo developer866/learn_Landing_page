@@ -275,8 +275,11 @@
   text-align: center;
   margin: auto;
 }
-.about-section{
-padding: 40px;
-  background: #a0430a;
-  margin: auto;
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: 40px;
+    background: #a0430a;
+    margin: auto;
+  }
 }
