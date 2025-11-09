@@ -2,7 +2,7 @@
   background: #a0430a;
   color: #dfe8e6;
   min-height: 70vh;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -30,16 +30,20 @@
 .book-form input,
 .book-form select,
 .book-form textarea {
- 
-  padding: 25px 15px;
-  border-radius: 8px;
+  padding: 20px 15px;
+  border-radius: 8px;;
   border: none;
   font-size: 1rem;
 }
 
+.book-form input:focus,
+.book-form select:focus{
+  outline: 2px solid #fff;
+}
+
 .book-form textarea {
   resize: vertical;
-  min-height: 150px;
+  min-height: 100px;
 }
 
 .book-form button {

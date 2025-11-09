@@ -1,13 +1,15 @@
-import React from "react";
-import "./About.css";
 
-function About() {
+import "./About.css";
+import { forwardRef } from "react";
+
+const About = forwardRef((props,textRef) => {
+  
   return (
     <main className="about-page">
       {/* Hero Section */}
       <section className="about-hero">
         <div className="about-hero-text">
-          <h1>About Us</h1>
+          <h1 ref={textRef}>About Us</h1>
           <p>
             We’re a creative agency driven by passion and purpose. Our team
             designs meaningful digital experiences that help brands stand out,
@@ -95,6 +97,6 @@ function About() {
       </section>
     </main>
   );
-}
+});
 
 export default About;

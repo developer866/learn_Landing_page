@@ -1,18 +1,44 @@
-import React from "react";
 import "./layout.css";
 import Services from "./Services.jsx";
 import About from "./About.jsx";
-import Contact from "./Contact.jsx";
 import { Link } from "react-router-dom";
-import BookService from "./BookService.jsx";
-import Project from "./Project.jsx";
+import { annotate } from "rough-notation";
+import { useEffect, useRef } from "react";
+
 function Home() {
+  const boxref = useRef();
+  const textRef = useRef();
+  useEffect(() => {
+    annotate(textRef.current, {
+      type: "highlight",
+      padding: 2,
+      color: "#10B981",
+      strokeWidth: 3,
+      animationDuration: 1500, 
+      iterations: 1,
+      multiline: true,
+    }).show();
+  }, []);
+
+  useEffect(() => {
+    annotate(boxref.current, {
+      type: "box",
+      color: "#F59E0B",
+      strokeWidth: 5,
+      padding: 10,
+      animationDuration: 3000, // 3 seconds (slow)
+      iterations: 1, // run once
+      multiline: true,
+    }).show();
+  }, []);
   return (
     <main>
       <section className="container">
         <section className="container-section">
           <section className="centered">
-            <h1>Transforming Ideas into Stunning Digital Experiences</h1>
+            <h1 ref={textRef}>
+              Transforming Ideas into Stunning Digital Experiences
+            </h1>
             <p>
               We are a creative website design agency helping brands stand out
               online. From sleek websites to powerful digital strategies — we
@@ -27,7 +53,7 @@ function Home() {
               </Link>
             </div>
           </section>
-          <section className="centered">
+          <section className="centered" ref={boxref}>
             <img
               src="./Images/artisan.jpg"
               alt="side image"
@@ -37,7 +63,7 @@ function Home() {
         </section>
       </section>
       <section className="about-section">
-        <About />
+        <About highlight={textRef}/>
       </section>
       <Services />
     </main>

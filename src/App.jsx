@@ -8,6 +8,7 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
 import Project from "./Pages/Project";
+import BookService from "./Pages/BookService";
 function App() {
   // const [theme,setTheme] = useState(True)
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Services" element={<Services />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Project" element={<Project />} />
+        <Route path="/BookService" element={<BookService />} />
       </Routes>
 
       <Footer />

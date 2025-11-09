@@ -59,9 +59,7 @@ function Services() {
             and drive engagement.
           </p>
         </div>
-  
       </div>
-      <BookService/>
     </div>
   );
 }
