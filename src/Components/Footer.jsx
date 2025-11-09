@@ -1,5 +1,8 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp,faFacebook,faInstagram,faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faLocationDot} from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -22,7 +25,11 @@ function Footer() {
             {/* Phone */}
             <div className="footer-contact">
               <div>
-                <img src="./phone.svg" alt="phone icon" />
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  style={{ color: "#a0430a" }}
+                  size="2x"
+                />
               </div>
               <div>
                 <p>+234 800 000 0000</p>
@@ -33,7 +40,11 @@ function Footer() {
             {/* Email */}
             <div className="footer-contact">
               <div>
-                <img src="./email.svg" alt="email icon" />
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{ color: "#a0430a" }}
+                  size="2x"
+                />
               </div>
               <div>
                 <p>contact@divinedesign.com</p>
@@ -43,7 +54,11 @@ function Footer() {
             {/* Address */}
             <div className="footer-contact">
               <div>
-                <img src="./location.svg" alt="location" />
+                <FontAwesomeIcon
+                  icon={faLocationDot}
+                  style={{ color: "#a0430a" }}
+                  size="2x"
+                />
               </div>
               <div>
                 <p>5 Unity Estate, Ojo Isashi, Lagos State, Nigeria</p>
@@ -57,13 +72,25 @@ function Footer() {
           <h2>Follow Us</h2>
           <div className="social">
             <div className="social-box">
-              <img src="./facebook.svg" alt="Facebook" />
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  style={{ color: "#a0430a" }}
+                  size="2x"
+                />
             </div>
             <div className="social-box">
-              <img src="./instagram.svg" alt="Instagram" />
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  style={{ color: "#a0430a" }}
+                  size="2x"
+                />
             </div>
             <div className="social-box">
-              <img src="./twitter.svg" alt="Twitter" />
+               <FontAwesomeIcon
+                  icon={faTwitter}
+                  style={{ color: "#a0430a" }}
+                  size="2x"
+                />
             </div>
           </div>
         </div>

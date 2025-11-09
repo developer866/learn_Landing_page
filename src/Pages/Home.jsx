@@ -36,7 +36,9 @@ function Home() {
           </section>
         </section>
       </section>
-      <About />
+      <section className="about-section">
+        <About />
+      </section>
       <Services />
     </main>
   );

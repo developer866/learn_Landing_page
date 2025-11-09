@@ -72,12 +72,7 @@
   gap: 15px;
 }
 
-.footer-contact img {
-  width: 25px;
-  height: 25px;
-  filter: brightness(0) saturate(100%) invert(35%) sepia(80%) saturate(420%)
-    hue-rotate(10deg);
-}
+
 
 .footer-right {
   text-align: center;
@@ -97,7 +92,6 @@
 .social-box {
   width: 40px;
   height: 40px;
-  border: 1px solid #a0430a;
   border-radius: 50%;
   display: flex;
   justify-content: center;

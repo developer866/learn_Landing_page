@@ -35,7 +35,7 @@
 @media (min-width: 768px) {
   .about-hero {
     text-align: left;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .about-hero-text p {
@@ -54,7 +54,7 @@
 /* MISSION SECTION */
 .about-mission {
   text-align: center;
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -84,7 +84,7 @@
 .about-team h2 {
   background: #dfe8e6;
   color: #a0430a;
-  width: 80%;
+  width: 100%;
   margin: auto;
   font-size: 2rem;
   margin-bottom: 30px;
