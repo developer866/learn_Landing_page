@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./BookService.css";
 
 function BookService() {
+  const [result, setResult] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -9,14 +10,46 @@ function BookService() {
     message: ""
   });
 
+  // Handle input changes
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Thank you, ${formData.name}! Your service request has been submitted.`);
-    setFormData({ name: "", email: "", service: "", message: "" });
+  // Submit form
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending...");
+
+    const dataToSend = new FormData();
+    dataToSend.append("name", formData.name);
+    dataToSend.append("email", formData.email);
+    dataToSend.append("service", formData.service);
+    dataToSend.append("message", formData.message);
+
+    // your access key
+    dataToSend.append("access_key", "8215fe14-8278-447c-97a8-681e851d3b32");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: dataToSend
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      setFormData({
+        name: "",
+        email: "",
+        service: "",
+        message: ""
+      });
+    } else {
+      setResult("Error submitting form");
+    }
   };
 
   return (
@@ -24,7 +57,7 @@ function BookService() {
       <h1>Book a Service</h1>
       <p>Fill out the form below and we will get back to you promptly.</p>
 
-      <form className="book-form" onSubmit={handleSubmit}>
+      <form className="book-form" onSubmit={onSubmit}>
         <input
           type="text"
           name="name"
@@ -33,6 +66,7 @@ function BookService() {
           onChange={handleChange}
           required
         />
+
         <input
           type="email"
           name="email"
@@ -41,6 +75,7 @@ function BookService() {
           onChange={handleChange}
           required
         />
+
         <select
           name="service"
           value={formData.service}
@@ -53,14 +88,18 @@ function BookService() {
           <option value="UI/UX Design">UI/UX Design</option>
           <option value="Digital Marketing">Digital Marketing</option>
         </select>
+
         <textarea
           name="message"
           placeholder="Your Message"
           value={formData.message}
           onChange={handleChange}
         ></textarea>
+
         <button type="submit">Submit</button>
       </form>
+
+      {result && <p className="form-result">{result}</p>}
     </main>
   );
 }
