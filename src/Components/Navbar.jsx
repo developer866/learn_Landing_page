@@ -28,9 +28,9 @@ function Navbar() {
               <Link to="/Services">
                 <p>Services</p>
               </Link>
-              <Link to="/BookService">
+              {/* <Link to="/BookService">
                 <p>Book Now</p>
-              </Link>
+              </Link> */}
               <Link to="/Contact">
                 <p>Contact Us</p>
               </Link>
