@@ -99,10 +99,15 @@
 
 .team-card {
   background: #dfe8e6;
+  border: 1px solid;
   color: #a0430a;
   border-radius: 10px;
   padding: 20px;
+
+
   text-align: center;
+
+  align-items: center;
   transition: all 0.3s ease;
 }
 
@@ -111,8 +116,10 @@
 }
 
 .team-card img {
-  width: 100%;
+ 
+  margin: auto;
   height: 250px;
+
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;

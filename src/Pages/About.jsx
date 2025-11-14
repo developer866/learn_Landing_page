@@ -33,17 +33,17 @@ const About = forwardRef((props, textRef) => {
         <h2>Meet Our Team</h2>
         <div className="team-grid">
           <div className="team-card">
-            <img src="./Images/team1.jpg" alt="Creative Director" />
+            <img src="./Images/avatartion.svg" alt="Creative Director" />
             <h3>Joseph Ayeni</h3>
             <p>Creative Director</p>
           </div>
           <div className="team-card">
-            <img src="./Images/team2.jpg" alt="Lead Designer" />
+            <img src="./Images/avatartion.svg" alt="Creative Director" />
             <h3>Opeyemi Smith</h3>
             <p>Lead Designer</p>
           </div>
           <div className="team-card">
-            <img src="./Images/team3.jpg" alt="Project Manager" />
+            <img src="./Images/avatartion.svg" alt="Creative Director" />
             <h3>Grace Ade</h3>
             <p>Project Manager</p>
           </div>
